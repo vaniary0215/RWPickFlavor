@@ -18,6 +18,7 @@
 		BC0DE0FC23153336000D4EA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC0DE0F123153335000D4EA8 /* Main.storyboard */; };
 		BC0DE0FD23153336000D4EA8 /* IceCreamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0DE0F323153335000D4EA8 /* IceCreamView.swift */; };
 		BC0DE0FE23153336000D4EA8 /* RGBAColorFromString.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0DE0F523153336000D4EA8 /* RGBAColorFromString.swift */; };
+		BC0DE107231540EB000D4EA8 /* RWPickFlavor-Bridging-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = BC0DE106231540EB000D4EA8 /* RWPickFlavor-Bridging-Header.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		BC0DE0F223153335000D4EA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BC0DE0F323153335000D4EA8 /* IceCreamView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IceCreamView.swift; sourceTree = "<group>"; };
 		BC0DE0F523153336000D4EA8 /* RGBAColorFromString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RGBAColorFromString.swift; sourceTree = "<group>"; };
+		BC0DE106231540EB000D4EA8 /* RWPickFlavor-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RWPickFlavor-Bridging-Header.h"; sourceTree = "<group>"; };
 		E4A96E44A4006D79F7E02047 /* Pods-RWPickFlavor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RWPickFlavor.release.xcconfig"; path = "Target Support Files/Pods-RWPickFlavor/Pods-RWPickFlavor.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -78,6 +80,7 @@
 				BC0DE0EE23153335000D4EA8 /* Views */,
 				BC0DE0D823152FD5000D4EA8 /* RWPickFlavor.h */,
 				BC0DE0D923152FD5000D4EA8 /* Info.plist */,
+				BC0DE106231540EB000D4EA8 /* RWPickFlavor-Bridging-Header.h */,
 			);
 			path = RWPickFlavor;
 			sourceTree = "<group>";
@@ -151,6 +154,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC0DE0DA23152FD5000D4EA8 /* RWPickFlavor.h in Headers */,
+				BC0DE107231540EB000D4EA8 /* RWPickFlavor-Bridging-Header.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,6 +191,7 @@
 				TargetAttributes = {
 					BC0DE0D423152FD5000D4EA8 = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -400,6 +405,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2E391841EB206887C00905A7 /* Pods-RWPickFlavor.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -416,6 +422,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.zee.iap.RWPickFlavor;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/applemacbookpro/Documents/Libraries/RWPickFlavor/RWPickFlavor/RWPickFlavor-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -425,6 +433,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E4A96E44A4006D79F7E02047 /* Pods-RWPickFlavor.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -441,6 +450,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.zee.iap.RWPickFlavor;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/applemacbookpro/Documents/Libraries/RWPickFlavor/RWPickFlavor/RWPickFlavor-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
